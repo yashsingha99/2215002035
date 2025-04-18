@@ -7,10 +7,10 @@ const app = express();
 app.use(cors());
 
 app.use(express.json());
-const router = require("./router/number.route.js");
+const router = require("./router/analytis.route");
 
 app.use(express.json());
-app.use('/api', router);
+app.use('/analytics', router);
 
 app.listen(8000, () => {
   console.log("Running on port 8000");
